@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <Router>
-      <Stack sx={{ minHeight: '100vh' }}>
+      <Stack sx={{ minHeight: '100vh'}}>
         <Navbar />
         <Box sx={{ flexGrow: 1 }}>
           <Routes>

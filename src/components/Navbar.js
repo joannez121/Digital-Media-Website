@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AppBar, Box, Toolbar, IconButton, Typography, Menu, MenuItem, Stack } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem, Stack } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom";
 import Login from '../pages/Login';
@@ -52,8 +52,16 @@ const Navbar = () => {
     setShowLoginForm(false);
   }
 
-  const pages = [['All', handleAllClick], ['Movies', handleMoviesClick], ['Shows', handleTVShowsClick]];
-  const userPages = [['Sign up', handleSignupClick], ['Login', handleLoginClick]];
+  const pages = [
+    { "name": "All", "handler": handleAllClick },
+    { "name": "Movies", "handler": handleMoviesClick },
+    { "name": "Shows", "handler": handleTVShowsClick }
+  ];
+
+  const userPages = [
+    { "name": "Sign up", "handler": handleSignupClick },
+    { "name": "Login", "handler": handleLoginClick }
+  ];
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "#7fdaf2", color: "white" }}>
@@ -65,13 +73,13 @@ const Navbar = () => {
           >
             JMedia
           </Typography>
-          {pages.map((page) => <Typography variant="h6" onClick={page[1]}>{page[0]}</Typography>)}
+          {pages.map((page) => <Typography variant="h6" onClick={page.handler}>{page.name}</Typography>)}
         </Stack>
         <Stack direction="row" spacing={2} sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: "flex-end", width: "100%" }}>
-          {userPages.map((page) => <Typography variant="h6" onClick={page[1]}>{page[0]}</Typography>)}
+          {userPages.map((page) => <Typography variant="h6" onClick={page.handler}>{page.name}</Typography>)}
         </Stack>
 
-        <Stack direction="row" sx={{ display: { xs: 'flex', md: 'none' } }}>
+        <Stack direction="row" sx={{ display: { xs: 'flex', md: 'none' }, alignItems: 'center' }}>
           <IconButton
             size="large"
             onClick={handleOpenMenu}
@@ -79,21 +87,17 @@ const Navbar = () => {
             <MenuIcon />
           </IconButton>
           <Menu
-            open={Boolean(anchorEl)}
+            open={anchorEl}
             onClose={handleCloseMenu}
             anchorEl={anchorEl}
             anchorOrigin={{
               vertical: 'bottom',
               horizontal: 'left',
             }}
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'left',
-            }}
           >
             {(pages.concat(userPages)).map((page) => (
-              <MenuItem onClick={page[1]}>
-                <Typography sx={{ textAlign: 'center' }}>{page[0]}</Typography>
+              <MenuItem onClick={page.handler}>
+                <Typography sx={{ textAlign: 'center' }}>{page.name}</Typography>
               </MenuItem>
             ))}
           </Menu>

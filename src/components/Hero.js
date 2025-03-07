@@ -12,18 +12,18 @@ const responsive = {
 
 const HeroItem = ({ image }) => {
   return (
-      <Box component="img"
-          src={image.src}
-          alt={image.alt}
-          height='100%'
-          width='100%'
-      ></Box>
+    <Box component="img"
+      src={image.src}
+      alt={image.alt}
+      height="100%"
+      width="100%"
+    ></Box>
   )
 }
 
 const Hero = ({ images }) => {
   return (
-    <Carousel responsive={responsive} showDots={true} containerClass="carousel-container">
+    <Carousel responsive={responsive} showDots autoPlay rewind rewindWithAnimation containerClass="carousel-container">
       {images.map((image) => <HeroItem image={image} />)}
     </Carousel>
   );

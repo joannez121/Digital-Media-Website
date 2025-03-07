@@ -15,7 +15,9 @@ const MediaGrid = ({ medias }) => {
                         alt={media.title}
                         onClick={() => navigate(`/${media.type}/${media.id}`)}
                         width="100%"
-                        height="90%">
+                        height="90%"
+                        boxShadow="3"
+                    >
                     </Box>
                     <Typography textAlign="center">{media.title}</Typography>
                 </Grid>

@@ -1,11 +1,8 @@
 import { Box, Typography, Card, CardContent, CardActions, Button, CardHeader, Divider, Stack, useMediaQuery } from '@mui/material'
 import React from 'react'
-import { useTheme } from '@mui/material/styles';
-
 
 const Summary = ({ media }) => {
-    const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.up('md'));
+    const matches = useMediaQuery('(min-width:900px)');
 
     const handleBuyClick = () => {
         alert("bought");
@@ -15,13 +12,13 @@ const Summary = ({ media }) => {
     }
 
     return (
-        <Card >
-            <Stack direction={matches ? "row" : "column"} spacing={2}>
+        <Card sx={{ boxShadow: 3, p: 2 }}>
+            <Stack direction={matches ? "row" : "column"} spacing={2} sx={{ alignItems: "center" }}>
                 <Box component="img"
                     src={media.mainPoster}
                     alt={media.title}
-                    width={matches ? "20%" : "40%"}
-                    maxHeight="100%"
+                    width={matches ? "20%" : "50%"}
+                    boxShadow="3"
                 >
                 </Box>
                 <Box >
@@ -51,9 +48,9 @@ const Summary = ({ media }) => {
                 <Box component="img"
                     src={media.altPoster}
                     alt={media.title}
-                    width={matches ? "35%" : "80%"}
-                    minHeight="100%"
-                    >
+                    width={matches ? "35%" : "90%"}
+                    boxShadow="3"
+                >
                 </Box>
             </Stack>
         </Card>

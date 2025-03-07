@@ -6,11 +6,10 @@ const ContentImage = ({ src, alt }) => {
         <Box sx={{px: 10, pb: 3, pt: 5}}>
             <Box
                 component="img"
-                sx={{
-                    height: "300px",
-                    width: "100%",
-                    objectFit: "cover"
-                }}
+                height="300px"
+                width="100%"
+                objectFit="cover"
+                boxShadow="3"
                 src={src}
                 alt={alt}>
             </Box>

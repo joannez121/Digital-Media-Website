@@ -5,22 +5,20 @@ import Summary from '../components/Summary';
 
 const Movie = () => {
     const { id } = useParams();
-    const [movie, setMovie] = useState({});
-
-    const getMovie = async () => {
-        const response = await fetch(`http://localhost:8020/medias?id=${id}`);
-        const movie = (await response.json())[0];
-        setMovie(movie);
-    };
+    const [movie, setMovie] = useState(null);
 
     useEffect(() => {
-        getMovie()
-        console.log("here")
-    }, []);
+        const getMovie = async () => {
+            const response = await fetch(`https://digital-media-db.vercel.app/medias?id=${id}`);
+            const movie = (await response.json())[0];
+            setMovie(movie);
+        };
+        getMovie();
+    }, [id]);
 
     return (
         <Box sx={{ p: 12 }}>
-            {Object.keys(movie).length !== 0 ? <Summary media={movie} /> : <></>}
+            {movie && <Summary media={movie} />}
         </Box>
     )
 }

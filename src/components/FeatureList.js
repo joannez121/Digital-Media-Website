@@ -5,22 +5,17 @@ import MediaGrid from './MediaGrid';
 const FeatureList = ({ listName, ids }) => {
   const [medias, setMedias] = useState([]);
 
-  const getCollection = async (collection, filters) => {
-    const response = await fetch(`http://localhost:8020/${collection}?${filters}`);
-    return await response.json();
-  };
-
-  const getMediaData = async () => {
-    let filters = "";
-    ids.forEach((id) => filters += `id=${id}&`)
-    const mediaDataList = await getCollection("medias", filters);
-
-    setMedias(mediaDataList);
-  };
-
   useEffect(() => {
+    const getMediaData = async () => {
+      let filters = "";
+      ids.forEach((id) => filters += `id=${id}&`)
+
+      const response = await fetch(`https://digital-media-db.vercel.app/medias?${filters}`);
+      const mediaDataList = await response.json();
+      setMedias(mediaDataList);
+    };
     getMediaData();
-  }, []);
+  }, [ids]);
 
   return (
     <Stack spacing={2} sx={{ px: 10, pb: 2, pt: 3 }}>

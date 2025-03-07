@@ -5,21 +5,20 @@ import Summary from '../components/Summary';
 
 const TVShow = () => {
     const { id } = useParams();
-    const [tvshow, setTVShow] = useState({});
-
-    const getTVShow = async () => {
-        const response = await fetch(`http://localhost:8020/medias?id=${id}`);
-        const tvshow = (await response.json())[0];
-        setTVShow(tvshow);
-    };
+    const [tvshow, setTVShow] = useState(null);
 
     useEffect(() => {
-        getTVShow()
-    }, []);
+        const getTVShow = async () => {
+            const response = await fetch(`https://digital-media-db.vercel.app/medias?id=${id}`);
+            const tvshow = (await response.json())[0];
+            setTVShow(tvshow);
+        };
+        getTVShow();
+    }, [id]);
 
     return (
         <Box sx={{ p: 12 }}>
-            {Object.keys(tvshow).length !== 0 ? <Summary media={tvshow} /> : <></>}
+            {tvshow && <Summary media={tvshow} />}
         </Box>
     )
 }

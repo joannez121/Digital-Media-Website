@@ -6,8 +6,8 @@ const genreValues = ["All", "Action", "Adventure", "Animation", "Comedy", "Crime
 const yearValues = ["All", "2024", "2025"];
 const countryValues = ["All", "Canada", "China", "South Korea", "United States"];
 
-const Listings = ( {type} ) => {  
-    const typeFilter = type === "all" ? "" : `type=${type}&`;  
+const Listings = ({ type }) => {
+    const typeFilter = type === "all" ? "" : `type=${type}`;
 
     const [medias, setMedias] = useState([]);
 
@@ -23,11 +23,11 @@ const Listings = ( {type} ) => {
     }
 
     const handleCountryChange = (event) => {
-        setCountry(event.target.innerText);    
+        setCountry(event.target.innerText);
     }
 
     const handleYearChange = (event) => {
-        setYear(event.target.innerText);    
+        setYear(event.target.innerText);
     }
 
     const handleTitleSort = () => {
@@ -39,29 +39,23 @@ const Listings = ( {type} ) => {
         setReleaseDateSort(true);
     }
 
-    const getCollection = async (collection, filters) => {
-        const response = await fetch(`http://localhost:8020/${collection}?${filters}`);
-        return await response.json();
-    };
-
-    const getMediaData = async () => {
-        const genreFilter = genre === "All" ? "" : `genres_like=${genre}&`;
-        const countryFilter = country === "All" ? "" : `country=${country}&`;
-        const yearFilter = year === "All" ? "" : `releasedDate_like=${year}&`;
-
-        const titleSorting = !titleSort ? "" : `_sort=title&order=asc&`;
-        const releaseDateSorting = !releaseDateSort ? "" : `_sort=releasedDate&order=desc&`;
-
-        const filters = `${typeFilter}${genreFilter}${countryFilter}${yearFilter}${titleSorting}${releaseDateSorting}`
-
-        const mediaDataList = await getCollection("medias", filters);
-        
-        setMedias(mediaDataList);
-    };
-
     useEffect(() => {
+        const getMediaData = async () => {
+            const genreFilter = genre === "All" ? "" : `&genres_like=${genre}`;
+            const countryFilter = country === "All" ? "" : `&country=${country}`;
+            const yearFilter = year === "All" ? "" : `&releasedDate_like=${year}`;
+
+            const titleSorting = !titleSort ? "" : `&_sort=title&order=asc`;
+            const releaseDateSorting = !releaseDateSort ? "" : `&_sort=releasedDate&order=desc`;
+
+            const filters = `${typeFilter}${genreFilter}${countryFilter}${yearFilter}${titleSorting}${releaseDateSorting}`
+
+            const response = await fetch(`https://digital-media-db.vercel.app/medias?${filters}`);
+            const mediaDataList = await response.json();
+            setMedias(mediaDataList);
+        };
         getMediaData();
-    }, [genre, country, year, titleSort, releaseDateSort]);
+    }, [typeFilter, genre, country, year, titleSort, releaseDateSort]);
 
     return (
         <>
