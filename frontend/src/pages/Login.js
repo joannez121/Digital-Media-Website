@@ -1,24 +1,52 @@
 import React, { useState } from 'react'
 import { Box, Button, Dialog, DialogTitle, DialogContent, DialogContentText, TextField, Stack } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const Login = ({ show, handleLoginClose, handleSignupClick }) => {
-    const [email, setEmail] = useState("");
+    const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
+    const navigate = useNavigate();
 
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value);
+    const handleUsernameChange = (event) => {
+        setUsername(event.target.value);
     }
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
+        console.log(username)
+        console.log(password)
         event.preventDefault();
-        alert("logged in");
-        handleLoginClose();
-    }
+        const response = await fetch(`http://localhost:8080/login`, {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET,POST,PATCH,OPTIONS'
+            },
+            credentials: "include",
+            body: JSON.stringify({
+                username: username,
+                password: password
+            })
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+            alert("user logged in");
+            localStorage.setItem('userId', data.message);
+            setUsername(null);
+            setPassword(null);
+            handleLoginClose();
+            navigate('/profile');
+        } else{
+            alert(data.message);
+        }
+        
+    };
 
     return (
         <Dialog
@@ -33,13 +61,12 @@ const Login = ({ show, handleLoginClose, handleSignupClick }) => {
                 <Box component="form" onSubmit={handleSubmit}>
                     <Stack spacing={2}>
                         <TextField
-                            label="Email"
-                            type="email"
+                            label="Username"
                             required
                             variant="standard"
                             fullWidth
-                            onChange={handleEmailChange}
-                            value={email}
+                            onChange={handleUsernameChange}
+                            value={username}
                         />
                         <TextField
                             label="Password"

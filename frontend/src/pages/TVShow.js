@@ -9,8 +9,9 @@ const TVShow = () => {
 
     useEffect(() => {
         const getTVShow = async () => {
-            const response = await fetch(`https://digital-media-db.vercel.app/medias?id=${id}`);
-            const tvshow = (await response.json())[0];
+            const response = await fetch(`http://localhost:8080/tvshow/${id}`);
+            const tvshow = await response.json();
+            console.log(tvshow)
             setTVShow(tvshow);
         };
         getTVShow();

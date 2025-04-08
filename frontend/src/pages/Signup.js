@@ -4,6 +4,7 @@ import { Box, Button, Dialog, DialogTitle, DialogContent, DialogContentText, Tex
 const Signup = ({ show, handleSignupClose }) => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
+    const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -15,6 +16,10 @@ const Signup = ({ show, handleSignupClose }) => {
         setLastName(event.target.value);
     }
 
+    const handleUsernameChange = (event) => {
+        setUsername(event.target.value);
+    }
+
     const handleEmailChange = (event) => {
         setEmail(event.target.value);
     }
@@ -23,10 +28,35 @@ const Signup = ({ show, handleSignupClose }) => {
         setPassword(event.target.value);
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        alert("signed up")
-        handleSignupClose();
+        const response = await fetch(`http://localhost:8080/register`, {
+            method: "POST",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                firstName: firstName, 
+                lastName: lastName,
+                username: username, 
+                email: email, 
+                password: password
+            })
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+            alert("user registerd");
+            setFirstName(null);
+            setLastName(null);
+            setUsername(null);
+            setEmail(null);
+            setPassword(null);
+            handleSignupClose();
+        } else{
+            alert(data.message);
+        }
     }
 
     return (
@@ -57,6 +87,14 @@ const Signup = ({ show, handleSignupClose }) => {
                         />
                     </Stack>
                     <Stack spacing={2}>
+                        <TextField
+                            label="Username"
+                            required
+                            variant="standard"
+                            fullWidth
+                            onChange={handleUsernameChange}
+                            value={username}
+                        />
                         <TextField
                             label="Email"
                             type="email"

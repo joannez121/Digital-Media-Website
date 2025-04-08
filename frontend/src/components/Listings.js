@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import MediaGrid from './MediaGrid';
-import FilterSection from '../components/FilterSection';
+import FilterSection from './FilterSection';
+import { TextField } from '@mui/material';
 
 const genreValues = ["All", "Action", "Adventure", "Animation", "Comedy", "Crime", "Horror", "Legal", "Mystery", "Romance", "Sci-Fi", "Thriller"];
 const yearValues = ["All", "2024", "2025"];
@@ -10,6 +11,7 @@ const Listings = ({ type }) => {
     const typeFilter = type === "all" ? "" : `type=${type}`;
 
     const [medias, setMedias] = useState([]);
+    const [title, setTitle] = useState("");
 
     const [genre, setGenre] = useState("All");
     const [country, setCountry] = useState("All");
@@ -17,6 +19,10 @@ const Listings = ({ type }) => {
 
     const [titleSort, setTitleSort] = useState(true);
     const [releaseDateSort, setReleaseDateSort] = useState(false);
+
+    const handleTitleChange = (event) => {
+        setTitle(event.target.value);
+    }
 
     const handleGenreChange = (event) => {
         setGenre(event.target.innerText);
@@ -50,15 +56,43 @@ const Listings = ({ type }) => {
 
             const filters = `${typeFilter}${genreFilter}${countryFilter}${yearFilter}${titleSorting}${releaseDateSorting}`
 
-            const response = await fetch(`https://digital-media-db.vercel.app/medias?${filters}`);
-            const mediaDataList = await response.json();
+            let movies = [];
+            let tvshows = [];
+            let moviesList = [];
+            let tvshowsList = [];
+
+            if (type === "movie") {
+                movies = await fetch(`http://localhost:8080/searchmovies?title=${title}`);
+                moviesList = await movies.json();
+            } else if (type === "tvshow") {
+                tvshows = await fetch(`http://localhost:8080/searchtvshows?title=${title}`);
+                tvshowsList = await tvshows.json();
+            } else {
+                movies = await fetch(`http://localhost:8080/searchmovies?title=${title}`);
+                tvshows = await fetch(`http://localhost:8080/searchtvshows?title=${title}`);
+                
+                moviesList = await movies.json();
+                tvshowsList = await tvshows.json();
+            }
+            const all = [...moviesList, ...tvshowsList];
+            const mediaDataList = all.sort((a, b) => a.title.localeCompare(b.title))
+
+            console.log(mediaDataList)
+
             setMedias(mediaDataList);
         };
         getMediaData();
-    }, [typeFilter, genre, country, year, titleSort, releaseDateSort]);
+    }, [typeFilter, genre, country, year, titleSort, releaseDateSort, title]);
 
     return (
         <>
+            <TextField
+                label="Search"
+                variant="outlined"
+                fullWidth
+                value={title}
+                onChange={handleTitleChange}
+            />
             <FilterSection genreValues={genreValues} yearValues={yearValues} countryValues={countryValues} genre={genre} country={country} year={year} titleSort={titleSort} releaseDateSort={releaseDateSort} handleGenreChange={handleGenreChange} handleCountryChange={handleCountryChange} handleYearChange={handleYearChange} handleTitleSort={handleTitleSort} handleReleaseDateSort={handleReleaseDateSort} />
             <MediaGrid medias={medias} />
         </>

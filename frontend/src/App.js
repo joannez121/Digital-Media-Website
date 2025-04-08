@@ -10,6 +10,9 @@ import Footer from './components/Footer';
 
 import { Box, Stack } from '@mui/material';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Login } from "@mui/icons-material";
+import Profile from "./pages/Profile";
+import ProfileSummary from "./components/ProfileSummary";
 
 const App = () => {
   return (
@@ -19,6 +22,7 @@ const App = () => {
         <Box sx={{ flexGrow: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="/all" element={<All />} />
             <Route path="/movies" element={<Movies />} />
             <Route path="/tvshows" element={<TVShows />} />

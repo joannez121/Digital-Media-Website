@@ -9,8 +9,8 @@ const Movie = () => {
 
     useEffect(() => {
         const getMovie = async () => {
-            const response = await fetch(`https://digital-media-db.vercel.app/medias?id=${id}`);
-            const movie = (await response.json())[0];
+            const response = await fetch(`http://localhost:8080/movie/${id}`);
+            const movie = await response.json();
             setMovie(movie);
         };
         getMovie();

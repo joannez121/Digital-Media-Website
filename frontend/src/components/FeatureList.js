@@ -2,15 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Typography, Stack } from '@mui/material';
 import MediaGrid from './MediaGrid';
 
-const FeatureList = ({ listName, ids }) => {
+const FeatureList = ({ listName, ids, type }) => {
   const [medias, setMedias] = useState([]);
 
   useEffect(() => {
     const getMediaData = async () => {
-      let filters = "";
-      ids.forEach((id) => filters += `id=${id}&`)
-
-      const response = await fetch(`https://digital-media-db.vercel.app/medias?${filters}`);
+      const response = await fetch(`http://localhost:8080/all${type}s?featured`);
       const mediaDataList = await response.json();
       setMedias(mediaDataList);
     };
