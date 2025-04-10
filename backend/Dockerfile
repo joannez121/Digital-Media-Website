@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jre-hotspot
+FROM eclipse-temurin:21
 
 WORKDIR /app
 
