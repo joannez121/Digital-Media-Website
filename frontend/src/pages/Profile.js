@@ -10,8 +10,8 @@ const Profile = () => {
 
     useEffect(() => {
         const getProfileData = async () => {
-            console.log(`http://localhost:8080/user/${userId}`)
-            const response = await fetch(`http://localhost:8080/user/${userId}`, {
+            console.log(`https://digital-media-website.onrender.com/user/${userId}`)
+            const response = await fetch(`https://digital-media-website.onrender.com/user/${userId}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

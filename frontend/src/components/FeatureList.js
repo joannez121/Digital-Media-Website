@@ -7,7 +7,7 @@ const FeatureList = ({ listName, ids, type }) => {
 
   useEffect(() => {
     const getMediaData = async () => {
-      const response = await fetch(`http://localhost:8080/all${type}s?featured`);
+      const response = await fetch(`https://digital-media-website.onrender.com/all${type}s?featured`);
       const mediaDataList = await response.json();
       setMedias(mediaDataList);
     };

@@ -9,7 +9,7 @@ const TVShow = () => {
 
     useEffect(() => {
         const getTVShow = async () => {
-            const response = await fetch(`http://localhost:8080/tvshow/${id}`);
+            const response = await fetch(`https://digital-media-website.onrender.com/tvshow/${id}`);
             const tvshow = await response.json();
             console.log(tvshow)
             setTVShow(tvshow);

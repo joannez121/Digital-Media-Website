@@ -16,7 +16,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const getLoggedIn = async () => {
-            const response = await fetch(`http://localhost:8080/validate`, {
+            const response = await fetch(`https://digital-media-website.onrender.com/validate`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ const Navbar = () => {
   }
 
   const handleLogout = async () => {
-      const response = await fetch("http://localhost:8080/logout", {
+      const response = await fetch("https://digital-media-website.onrender.com/logout", {
         method: "POST", 
         credentials: "include", 
       });

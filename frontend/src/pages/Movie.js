@@ -9,7 +9,7 @@ const Movie = () => {
 
     useEffect(() => {
         const getMovie = async () => {
-            const response = await fetch(`http://localhost:8080/movie/${id}`);
+            const response = await fetch(`https://digital-media-website.onrender.com/movie/${id}`);
             const movie = await response.json();
             setMovie(movie);
         };

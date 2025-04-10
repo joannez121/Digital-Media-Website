@@ -62,14 +62,14 @@ const Listings = ({ type }) => {
             let tvshowsList = [];
 
             if (type === "movie") {
-                movies = await fetch(`http://localhost:8080/searchmovies?title=${title}`);
+                movies = await fetch(`https://digital-media-website.onrender.com/searchmovies?title=${title}`);
                 moviesList = await movies.json();
             } else if (type === "tvshow") {
-                tvshows = await fetch(`http://localhost:8080/searchtvshows?title=${title}`);
+                tvshows = await fetch(`https://digital-media-website.onrender.com/searchtvshows?title=${title}`);
                 tvshowsList = await tvshows.json();
             } else {
-                movies = await fetch(`http://localhost:8080/searchmovies?title=${title}`);
-                tvshows = await fetch(`http://localhost:8080/searchtvshows?title=${title}`);
+                movies = await fetch(`https://digital-media-website.onrender.com/searchmovies?title=${title}`);
+                tvshows = await fetch(`https://digital-media-website.onrender.com/searchtvshows?title=${title}`);
                 
                 moviesList = await movies.json();
                 tvshowsList = await tvshows.json();

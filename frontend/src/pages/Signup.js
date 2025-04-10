@@ -30,7 +30,7 @@ const Signup = ({ show, handleSignupClose }) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const response = await fetch(`http://localhost:8080/register`, {
+        const response = await fetch(`https://digital-media-website.onrender.com/register`, {
             method: "POST",
             headers: {
                 'Accept': 'application/json',
