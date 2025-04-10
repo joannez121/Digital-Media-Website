@@ -1,414 +1,424 @@
-{
-  "medias": [
+[
     {
-      "id": 1,
-      "title": "Escape",
-      "synopsis": "After completing his required decade of military service and being honored as a hero, a North Korean sergeant makes a sudden shocking attempt to defect to the South, risking life and limb for the chance to finally determine his own destiny.",
-      "mainPoster": "https://upload.wikimedia.org/wikipedia/en/d/d7/Escape_2024_south_korean_film.jpg",
-      "altPoster": "https://images.mubicdn.net/images/film/403450/cache-944049-1728688808/image-w1280.jpg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-07-03",
-      "length": 94,
-      "country": "South Korea",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Thriller"
-      ],
-      "type": "movie"
+        "id": 1,
+        "title": "Escape",
+        "synopsis": "After completing his required decade of military service and being honored as a hero, a North Korean sergeant makes a sudden shocking attempt to defect to the South, risking life and limb for the chance to finally determine his own destiny.",
+        "mainPoster": "https://upload.wikimedia.org/wikipedia/en/d/d7/Escape_2024_south_korean_film.jpg",
+        "altPoster": "https://images.mubicdn.net/images/film/403450/cache-944049-1728688808/image-w1280.jpg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-07-03",
+        "length": 94,
+        "country": "South Korea",
+        "genres": [
+            "Action",
+            "Adventure",
+            "Thriller"
+        ],
+        "type": "movie",
+        "featured": true
     },
     {
-      "id": 2,
-      "title": "My Name Is Loh Kiwan",
-      "synopsis": "After defecting from North Korea, Loh Kiwan struggles to obtain refugee status in Belgium, where he encounters a dejected woman who has lost all hope.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BZWNkMjk0NmItOWI4Yi00ZjNhLTlkZWItZDcxOTg3ZTUwZDYzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "altPoster": "https://thefutureoftheforce.com/wp-content/uploads/2024/02/lohkiwan_unit_0302-10-JJG00797_c-1024x683.jpeg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-03-01",
-      "length": 133,
-      "country": "South Korea",
-      "genres": [
-        "Romance"
-      ],
-      "type": "movie"
+        "id": 2,
+        "title": "My Name Is Loh Kiwan",
+        "synopsis": "After defecting from North Korea, Loh Kiwan struggles to obtain refugee status in Belgium, where he encounters a dejected woman who has lost all hope.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BZWNkMjk0NmItOWI4Yi00ZjNhLTlkZWItZDcxOTg3ZTUwZDYzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "altPoster": "https://thefutureoftheforce.com/wp-content/uploads/2024/02/lohkiwan_unit_0302-10-JJG00797_c-1024x683.jpeg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-03-01",
+        "length": 133,
+        "country": "South Korea",
+        "genres": [
+            "Romance"
+        ],
+        "type": "movie"
     },
     {
-      "id": 3,
-      "title": "The Gorge",
-      "synopsis": "Two highly-trained operatives become close after being sent to protect opposite sides of a mysterious gorge. When an evil emerges, they must work together to survive what lies within.",
-      "mainPoster": "https://xl.movieposterdb.com/24_12/2025/13654226/xl_the-gorge-movie-poster_85938c92.png",
-      "altPoster": "https://images.squarespace-cdn.com/content/v1/63bb3e8a824d7e2f7eedf0d3/3db5ac41-8bdf-451f-ad5a-3dccb2aa7a08/The+Gorge+Horizontal+.jpeg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2025-02-14",
-      "length": 127,
-      "country": "United States",
-      "genres": [
-        "Horror",
-        "Action",
-        "Thriller",
-        "Romance"
-      ],
-      "type": "movie"
+        "id": 3,
+        "title": "The Gorge",
+        "synopsis": "Two highly-trained operatives become close after being sent to protect opposite sides of a mysterious gorge. When an evil emerges, they must work together to survive what lies within.",
+        "mainPoster": "https://xl.movieposterdb.com/24_12/2025/13654226/xl_the-gorge-movie-poster_85938c92.png",
+        "altPoster": "https://images.squarespace-cdn.com/content/v1/63bb3e8a824d7e2f7eedf0d3/3db5ac41-8bdf-451f-ad5a-3dccb2aa7a08/The+Gorge+Horizontal+.jpeg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2025-02-14",
+        "length": 127,
+        "country": "United States",
+        "genres": [
+            "Horror",
+            "Action",
+            "Thriller",
+            "Romance"
+        ],
+        "type": "movie",
+        "featured": true
     },
     {
-      "id": 4,
-      "title": "The Wild Robot",
-      "synopsis": "After a shipwreck, an intelligent robot called Roz is stranded on an uninhabited island. To survive the harsh environment, Roz bonds with the island's animals and cares for an orphaned baby goose.",
-      "mainPoster": "https://www.santacruzcinema.com/wp-content/uploads/sites/2/2024/04/HO00001690.jpeg?w=1212",
-      "altPoster": "https://statcdn.fandango.com/MPX/image/NBCU_Fandango/881/715/WildRobot.jpg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-09-08",
-      "length": 102,
-      "country": "United States",
-      "genres": [
-        "Animation",
-        "Sci-Fi",
-        "Adventure"
-      ],
-      "type": "movie"
+        "id": 4,
+        "title": "The Wild Robot",
+        "synopsis": "After a shipwreck, an intelligent robot called Roz is stranded on an uninhabited island. To survive the harsh environment, Roz bonds with the island's animals and cares for an orphaned baby goose.",
+        "mainPoster": "https://www.santacruzcinema.com/wp-content/uploads/sites/2/2024/04/HO00001690.jpeg?w=1212",
+        "altPoster": "https://statcdn.fandango.com/MPX/image/NBCU_Fandango/881/715/WildRobot.jpg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-09-08",
+        "length": 102,
+        "country": "United States",
+        "genres": [
+            "Animation",
+            "Sci-Fi",
+            "Adventure"
+        ],
+        "type": "movie"
     },
     {
-      "id": 5,
-      "title": "The Order",
-      "synopsis": "A string of violent robberies in the Pacific Northwest leads veteran FBI agent Terry Husk to a white supremacist group; the group plans to overthrow the federal government.",
-      "mainPoster": "https://m.media-amazon.com/images/S/pv-target-images/d1d061d92b717dcbe6cb44f8efdfe273365d592529cc7cb73bc38c119f5c2492.jpg",
-      "altPoster": "https://m.media-amazon.com/images/S/pv-target-images/378012687b1b132aad0d457fa3f084373059868580e37723edcd1bd618cc9899._SX1080_FMjpg_.jpg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-08-31",
-      "length": 116,
-      "country": "Canada",
-      "genres": [
-        "Thiller",
-        "Crime"
-      ],
-      "type": "movie"
+        "id": 5,
+        "title": "The Order",
+        "synopsis": "A string of violent robberies in the Pacific Northwest leads veteran FBI agent Terry Husk to a white supremacist group; the group plans to overthrow the federal government.",
+        "mainPoster": "https://m.media-amazon.com/images/S/pv-target-images/d1d061d92b717dcbe6cb44f8efdfe273365d592529cc7cb73bc38c119f5c2492.jpg",
+        "altPoster": "https://m.media-amazon.com/images/S/pv-target-images/378012687b1b132aad0d457fa3f084373059868580e37723edcd1bd618cc9899._SX1080_FMjpg_.jpg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-08-31",
+        "length": 116,
+        "country": "Canada",
+        "genres": [
+            "Thiller",
+            "Crime"
+        ],
+        "type": "movie",
+        "featured": true
     },
     {
-      "id": 6,
-      "title": "All Stirred Up!",
-      "synopsis": "In a remote village somewhere on the border between Quebec and the United States, the unyielding customs officer Sonia confiscates the contents of the car belonging to Victor, a French chef living in New York and in need of recognition.",
-      "mainPoster": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p28206495_v_v13_ac.jpg",
-      "altPoster": "https://d32qys9a6wm9no.cloudfront.net/images/movies/backdrop/4a/23036ae02a5d10e0fbbe67be11d10c37_1280x720.jpg?t=1738403455",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-09-12",
-      "length": 90,
-      "country": "Canada",
-      "genres": [
-        "Comedy"
-      ],
-      "type": "movie"
+        "id": 6,
+        "title": "All Stirred Up!",
+        "synopsis": "In a remote village somewhere on the border between Quebec and the United States, the unyielding customs officer Sonia confiscates the contents of the car belonging to Victor, a French chef living in New York and in need of recognition.",
+        "mainPoster": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p28206495_v_v13_ac.jpg",
+        "altPoster": "https://d32qys9a6wm9no.cloudfront.net/images/movies/backdrop/4a/23036ae02a5d10e0fbbe67be11d10c37_1280x720.jpg?t=1738403455",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-09-12",
+        "length": 90,
+        "country": "Canada",
+        "genres": [
+            "Comedy"
+        ],
+        "type": "movie",
+        "featured": true
     },
     {
-      "id": 7,
-      "title": "A Legend",
-      "synopsis": "An archaeologist notices that the texture of the relics discovered during the excavation of a glacier closely resembles a jade pendant seen in one of his dreams. He and his team then embark on an expedition into the depths of the glacier.",
-      "mainPoster": "https://i.pinimg.com/736x/d9/ab/4d/d9ab4d2b9a7ab94dfe91e2e306bf1841.jpg",
-      "altPoster": "https://i0.wp.com/maactioncinema.com/wp-content/uploads/2024/12/a-legend.jpg?ssl=1",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-07-10",
-      "length": 129,
-      "country": "China",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy"
-      ],
-      "type": "movie"
+        "id": 7,
+        "title": "A Legend",
+        "synopsis": "An archaeologist notices that the texture of the relics discovered during the excavation of a glacier closely resembles a jade pendant seen in one of his dreams. He and his team then embark on an expedition into the depths of the glacier.",
+        "mainPoster": "https://i.pinimg.com/736x/d9/ab/4d/d9ab4d2b9a7ab94dfe91e2e306bf1841.jpg",
+        "altPoster": "https://i0.wp.com/maactioncinema.com/wp-content/uploads/2024/12/a-legend.jpg?ssl=1",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-07-10",
+        "length": 129,
+        "country": "China",
+        "genres": [
+            "Action",
+            "Adventure",
+            "Comedy"
+        ],
+        "type": "movie"
     },
     {
-      "id": 8,
-      "title": "Wonderland",
-      "synopsis": "In a world where an AI programme allows people to communicate with their deceased loved ones, a flight attendant and a mother question the meaning of reality and humanity.",
-      "mainPoster": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/wonderland_24.png",
-      "altPoster": "https://wimg.heraldcorp.com/content/default/2024/07/02/20240702050579_0.jpg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-06-05",
-      "length": 113,
-      "country": "South Korea",
-      "genres": [
-        "Romance",
-        "Sci-Fi"
-      ],
-      "type": "movie"
+        "id": 8,
+        "title": "Wonderland",
+        "synopsis": "In a world where an AI programme allows people to communicate with their deceased loved ones, a flight attendant and a mother question the meaning of reality and humanity.",
+        "mainPoster": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/wonderland_24.png",
+        "altPoster": "https://wimg.heraldcorp.com/content/default/2024/07/02/20240702050579_0.jpg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-06-05",
+        "length": 113,
+        "country": "South Korea",
+        "genres": [
+            "Romance",
+            "Sci-Fi"
+        ],
+        "type": "movie"
     },
     {
-      "id": 9,
-      "title": "The Prosecutor",
-      "synopsis": "A poor young man is wrongly charged with drug trafficking after being deceived. An ex-prosecutor investigates the case, uncovers a corrupt lawyer team's scheme, and restores justice despite obstruction from evil forces.",
-      "mainPoster": "https://resizing.flixster.com/gIXatah-MO-JPILYRTqvC7rgJ4U=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk5ZWM1Yzc0LTA1YTMtNGE2ZC1iOTliLTY0MjZiMDE2MGE3OC5qcGc=",
-      "altPoster": "https://deadline.com/wp-content/uploads/2025/01/prosecutor.webp",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-12-21",
-      "length": 118,
-      "country": "China",
-      "genres": [
-        "Action",
-        "Legal",
-        "Thriller"
-      ],
-      "type": "movie"
+        "id": 9,
+        "title": "The Prosecutor",
+        "synopsis": "A poor young man is wrongly charged with drug trafficking after being deceived. An ex-prosecutor investigates the case, uncovers a corrupt lawyer team's scheme, and restores justice despite obstruction from evil forces.",
+        "mainPoster": "https://resizing.flixster.com/gIXatah-MO-JPILYRTqvC7rgJ4U=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk5ZWM1Yzc0LTA1YTMtNGE2ZC1iOTliLTY0MjZiMDE2MGE3OC5qcGc=",
+        "altPoster": "https://deadline.com/wp-content/uploads/2025/01/prosecutor.webp",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-12-21",
+        "length": 118,
+        "country": "China",
+        "genres": [
+            "Action",
+            "Legal",
+            "Thriller"
+        ],
+        "type": "movie",
+        "featured": true
     },
     {
-      "id": 10,
-      "title": "La Dolce Villa",
-      "synopsis": "When his daughter decides to buy a crumbling Tuscan villa, Eric rushes to Italy to talk her out of it. He instead finds beauty, romance and a new purpose.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BNjJmM2VjODktY2UwMC00N2FiLThmOWEtOGFhZmM2MjI0MGVjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "altPoster": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/02/eric-chats-with-3-women-in-la-dolce-villa.JPG",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2025-02-13",
-      "length": 99,
-      "country": "United States",
-      "genres": [
-        "Romance",
-        "Comedy"
-      ],
-      "type": "movie"
+        "id": 10,
+        "title": "La Dolce Villa",
+        "synopsis": "When his daughter decides to buy a crumbling Tuscan villa, Eric rushes to Italy to talk her out of it. He instead finds beauty, romance and a new purpose.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BNjJmM2VjODktY2UwMC00N2FiLThmOWEtOGFhZmM2MjI0MGVjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "altPoster": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/02/eric-chats-with-3-women-in-la-dolce-villa.JPG",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2025-02-13",
+        "length": 99,
+        "country": "United States",
+        "genres": [
+            "Romance",
+            "Comedy"
+        ],
+        "type": "movie"
     },
     {
-      "id": 11,
-      "title": "Nocturnal",
-      "synopsis": "A mystery thriller about what happens when a detective finds out that a case he is working on resembles a novel while investigating the death of a best-selling author's husband.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BYmZiMjNjMGQtZmNlMS00M2Y0LWE0ZWYtN2M4NzI1Y2Y5NmNlXkEyXkFqcGc@._V1_.jpg",
-      "altPoster": "https://0.soompi.io/wp-content/uploads/2025/01/07190419/nocturnal-1.jpg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2025-02-05",
-      "length": 99,
-      "country": "South Korea",
-      "genres": [
-        "Thriller",
-        "Crime"
-      ],
-      "type": "movie"
+        "id": 11,
+        "title": "Nocturnal",
+        "synopsis": "A mystery thriller about what happens when a detective finds out that a case he is working on resembles a novel while investigating the death of a best-selling author's husband.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BYmZiMjNjMGQtZmNlMS00M2Y0LWE0ZWYtN2M4NzI1Y2Y5NmNlXkEyXkFqcGc@._V1_.jpg",
+        "altPoster": "https://0.soompi.io/wp-content/uploads/2025/01/07190419/nocturnal-1.jpg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2025-02-05",
+        "length": 99,
+        "country": "South Korea",
+        "genres": [
+            "Thriller",
+            "Crime"
+        ],
+        "type": "movie",
+        "featured": true
     },
     {
-      "id": 12,
-      "title": "A Sacrifice",
-      "synopsis": "American social psychologist Ben Monroe investigates a local cult in Berlin that is linked to a disturbing event, while his daughter becomes drawn into the world of a mysterious boy.",
-      "mainPoster": "https://vvsfilms.com/wp-content/uploads/2024/06/vvs-master-a-sacrifice-en.jpg",
-      "altPoster": "https://www.highonfilms.com/wp-content/uploads/2024/07/A-Sacrifice-2024-Movie-Ending-Explained-hof-.png",
-      "purchasePrice": 12,
-      "rentPrice": 10,
-      "releasedDate": "2024-06-28",
-      "length": 94,
-      "country": "United States",
-      "genres": [
-        "Thriller",
-        "Horror",
-        "Mystery"
-      ],
-      "type": "movie"
+        "id": 12,
+        "title": "A Sacrifice",
+        "synopsis": "American social psychologist Ben Monroe investigates a local cult in Berlin that is linked to a disturbing event, while his daughter becomes drawn into the world of a mysterious boy.",
+        "mainPoster": "https://vvsfilms.com/wp-content/uploads/2024/06/vvs-master-a-sacrifice-en.jpg",
+        "altPoster": "https://www.highonfilms.com/wp-content/uploads/2024/07/A-Sacrifice-2024-Movie-Ending-Explained-hof-.png",
+        "purchasePrice": 12,
+        "rentPrice": 10,
+        "releasedDate": "2024-06-28",
+        "length": 94,
+        "country": "United States",
+        "genres": [
+            "Thriller",
+            "Horror",
+            "Mystery"
+        ],
+        "type": "movie"
     },
     {
-      "id": 14,
-      "title": "Queen of Tears",
-      "synopsis": "The queen of department stores and the prince of supermarkets weather a marital crisis, until love miraculously begins to bloom again.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BNWNmYmQ2NzctNTA1NS00NGU2LThjOTQtYTgxNmUyYmNjODYyXkEyXkFqcGc@._V1_.jpg",
-      "altPoster": "https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABXsQBkrCfwEomiuVvM7_AhvssD-PUBTkbIaiNvmI8YpE7RJ7vYE3phxyrrrWXba_ZmKkz7mpEqirIDYRE7935vA04HfQ41bFZCa_.jpg?r=1f1",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-03-09",
-      "eps": 16,
-      "country": "South Korea",
-      "genres": [
-        "Comedy",
-        "Romance"
-      ],
-      "type": "tvshow"
+        "id": 14,
+        "title": "Queen of Tears",
+        "synopsis": "The queen of department stores and the prince of supermarkets weather a marital crisis, until love miraculously begins to bloom again.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BNWNmYmQ2NzctNTA1NS00NGU2LThjOTQtYTgxNmUyYmNjODYyXkEyXkFqcGc@._V1_.jpg",
+        "altPoster": "https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABXsQBkrCfwEomiuVvM7_AhvssD-PUBTkbIaiNvmI8YpE7RJ7vYE3phxyrrrWXba_ZmKkz7mpEqirIDYRE7935vA04HfQ41bFZCa_.jpg?r=1f1",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-03-09",
+        "eps": 16,
+        "country": "South Korea",
+        "genres": [
+            "Comedy",
+            "Romance"
+        ],
+        "type": "tvshow",
+        "featured": true
     },
     {
-      "id": 15,
-      "title": "The Trunk",
-      "synopsis": "A secret marriage service is uncovered when a trunk washes up on the shore, revealing the strange marriage between a couple in the thick of it all.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BNTZkNDcxZTctNmQ3ZC00NTc5LWJiMGMtMGNjNTI1NzEwNjNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "altPoster": "https://www.nme.com/wp-content/uploads/2024/11/the-trunk-netflix-review.jpg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-11-24",
-      "eps": 8,
-      "country": "South Korea",
-      "genres": [
-        "Crime",
-        "Mystery"
-      ],
-      "type": "tvshow"
+        "id": 15,
+        "title": "The Trunk",
+        "synopsis": "A secret marriage service is uncovered when a trunk washes up on the shore, revealing the strange marriage between a couple in the thick of it all.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BNTZkNDcxZTctNmQ3ZC00NTc5LWJiMGMtMGNjNTI1NzEwNjNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "altPoster": "https://www.nme.com/wp-content/uploads/2024/11/the-trunk-netflix-review.jpg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-11-24",
+        "eps": 8,
+        "country": "South Korea",
+        "genres": [
+            "Crime",
+            "Mystery"
+        ],
+        "type": "tvshow"
     },
     {
-      "id": 16,
-      "title": "Pyramid Game",
-      "synopsis": "After being voted the least popular student and becoming the target of school violence, Su-ji sets out to climb to the top of the rankings.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BZDg5ZDkwODUtOTdkNy00NWM5LWFiNjUtYjc5NWRhMDQ3YmNlXkEyXkFqcGc@._V1_.jpg",
-      "altPoster": "https://www.formatbiz.it/file/blog/pyramid_11466.jpg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-02-29",
-      "eps": 10,
-      "country": "South Korea",
-      "genres": [
-        "Mystery"
-      ],
-      "type": "tvshow"
+        "id": 16,
+        "title": "Pyramid Game",
+        "synopsis": "After being voted the least popular student and becoming the target of school violence, Su-ji sets out to climb to the top of the rankings.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BZDg5ZDkwODUtOTdkNy00NWM5LWFiNjUtYjc5NWRhMDQ3YmNlXkEyXkFqcGc@._V1_.jpg",
+        "altPoster": "https://www.formatbiz.it/file/blog/pyramid_11466.jpg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-02-29",
+        "eps": 10,
+        "country": "South Korea",
+        "genres": [
+            "Mystery"
+        ],
+        "type": "tvshow",
+        "featured": true
     },
     {
-      "id": 17,
-      "title": "Connection",
-      "synopsis": "A story that reveals the whole story of a friendship that has been changed over 20 years based on the death of a friend of Jang Jae-kyeong, an ace detective in a drug squad who is forcibly addicted to drugs.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BZjkzNGI0NmYtYWQ0OS00NDIxLThlZjgtZThlZDc4YjE2NmYwXkEyXkFqcGc@._V1_.jpg",
-      "altPoster": "https://1.vikiplatform.com/c/40536c/3eb43557d5.jpg?x=b",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-05-24",
-      "eps": 14,
-      "country": "South Korea",
-      "genres": [
-        "Crime",
-        "Mystery",
-        "Thiller",
-        "Action"
-      ],
-      "type": "tvshow"
+        "id": 17,
+        "title": "Connection",
+        "synopsis": "A story that reveals the whole story of a friendship that has been changed over 20 years based on the death of a friend of Jang Jae-kyeong, an ace detective in a drug squad who is forcibly addicted to drugs.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BZjkzNGI0NmYtYWQ0OS00NDIxLThlZjgtZThlZDc4YjE2NmYwXkEyXkFqcGc@._V1_.jpg",
+        "altPoster": "https://1.vikiplatform.com/c/40536c/3eb43557d5.jpg?x=b",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-05-24",
+        "eps": 14,
+        "country": "South Korea",
+        "genres": [
+            "Crime",
+            "Mystery",
+            "Thiller",
+            "Action"
+        ],
+        "type": "tvshow",
+        "featured": true
     },
     {
-      "id": 18,
-      "title": "You Are My Secret",
-      "synopsis": "Lobby manager Xiao Ning and business star Yu Heng share a desire to marry soon. As childhood friends turned colleagues when Yu Heng becomes Xiao Ning's boss they navigate marriage and career together exploring life's meaning as newlyweds.",
-      "mainPoster": "https://i.mydramalist.com/jQgpDv_4f.jpg",
-      "altPoster": "https://1.vikiplatform.com/c/40417c/52ee9f93bd.jpg?x=b",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-07-31",
-      "eps": 32,
-      "country": "China",
-      "genres": [
-        "Romance"
-      ],
-      "type": "tvshow"
+        "id": 18,
+        "title": "You Are My Secret",
+        "synopsis": "Lobby manager Xiao Ning and business star Yu Heng share a desire to marry soon. As childhood friends turned colleagues when Yu Heng becomes Xiao Ning's boss they navigate marriage and career together exploring life's meaning as newlyweds.",
+        "mainPoster": "https://i.mydramalist.com/jQgpDv_4f.jpg",
+        "altPoster": "https://1.vikiplatform.com/c/40417c/52ee9f93bd.jpg?x=b",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-07-31",
+        "eps": 32,
+        "country": "China",
+        "genres": [
+            "Romance"
+        ],
+        "type": "tvshow",
+        "featured": true
     },
     {
-      "id": 19,
-      "title": "The Spirealm",
-      "synopsis": "Lin Jiushi finds himself inexplicably thrust inside a mind-bending reality dictated by an enigmatic VR game where he must pass twelve doors to escape. The catch? Each door initiates new mysteries to solve and conditions to abide by.",
-      "mainPoster": "https://i.mydramalist.com/2wgBdE_4f.jpg",
-      "altPoster": "https://image.tmdb.org/t/p/original/4lXtGfDQbvhVW41ZyuKjquow3Bu.jpg",
-      "purchasePrice": 20,
-      "rentPrice": 10,
-      "releasedDate": "2024-02-02",
-      "eps": 38,
-      "country": "China",
-      "genres": [
-        "Horror",
-        "Mystery",
-        "Comedy"
-      ],
-      "type": "tvshow"
+        "id": 19,
+        "title": "The Spirealm",
+        "synopsis": "Lin Jiushi finds himself inexplicably thrust inside a mind-bending reality dictated by an enigmatic VR game where he must pass twelve doors to escape. The catch? Each door initiates new mysteries to solve and conditions to abide by.",
+        "mainPoster": "https://i.mydramalist.com/2wgBdE_4f.jpg",
+        "altPoster": "https://image.tmdb.org/t/p/original/4lXtGfDQbvhVW41ZyuKjquow3Bu.jpg",
+        "purchasePrice": 20,
+        "rentPrice": 10,
+        "releasedDate": "2024-02-02",
+        "eps": 38,
+        "country": "China",
+        "genres": [
+            "Horror",
+            "Mystery",
+            "Comedy"
+        ],
+        "type": "tvshow"
     },
     {
-      "id": 20,
-      "title": "One More Time",
-      "synopsis": "D.J.'s optimistic, community-oriented outlook on life is challenged at every turn, as he and his team struggle to keep a small, independent shop alive in the face of a new corporate store opening.",
-      "mainPoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-JcUB24QQB9jWuIyu5dRD2ZLPKWwtzs1NEhqA5dNVj4xE2P5CEUJxbZjmp_LweMZRYcw&usqp=CAU",
-      "altPoster": "https://www.goaheadsumi.com/content/images/size/w2000/2024/01/ONE-MORE-TIME-cast---Dayton-Sinkia-as-Chris--Geri-Hall-as-Cynthia--Elise-Bauman-as-Jen--D.J-Demers-as-DJ--Seran-Sathiyaseelan-as-Keeran--Daniel-Beirne-as-Wayne-.jpg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-04-02",
-      "eps": 13,
-      "country": "Canada",
-      "genres": [
-        "Comedy"
-      ],
-      "type": "tvshow"
+        "id": 20,
+        "title": "One More Time",
+        "synopsis": "D.J.'s optimistic, community-oriented outlook on life is challenged at every turn, as he and his team struggle to keep a small, independent shop alive in the face of a new corporate store opening.",
+        "mainPoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-JcUB24QQB9jWuIyu5dRD2ZLPKWwtzs1NEhqA5dNVj4xE2P5CEUJxbZjmp_LweMZRYcw&usqp=CAU",
+        "altPoster": "https://www.goaheadsumi.com/content/images/size/w2000/2024/01/ONE-MORE-TIME-cast---Dayton-Sinkia-as-Chris--Geri-Hall-as-Cynthia--Elise-Bauman-as-Jen--D.J-Demers-as-DJ--Seran-Sathiyaseelan-as-Keeran--Daniel-Beirne-as-Wayne-.jpg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-04-02",
+        "eps": 13,
+        "country": "Canada",
+        "genres": [
+            "Comedy"
+        ],
+        "type": "tvshow",
+        "featured": true
     },
     {
-      "id": 21,
-      "title": "The Agency",
-      "synopsis": "A covert CIA agent is ordered to abandon his undercover life and return to London Station; when the love he left behind reappears, romance reignites.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BMjU3YzYyNmEtZjJhMi00YjA3LTgyOTItMzQ2NTNlZTlkMjYxXkEyXkFqcGc@._V1_.jpg",
-      "altPoster": "https://www.hollywoodreporter.com/wp-content/uploads/2024/11/agency_102_lv_240717_00422_RT3-H-2024.jpg?w=1296&h=730&crop=1",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-11-29",
-      "eps": 10,
-      "country": "United States",
-      "genres": [
-        "Thriller"
-      ],
-      "type": "tvshow"
+        "id": 21,
+        "title": "The Agency",
+        "synopsis": "A covert CIA agent is ordered to abandon his undercover life and return to London Station; when the love he left behind reappears, romance reignites.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BMjU3YzYyNmEtZjJhMi00YjA3LTgyOTItMzQ2NTNlZTlkMjYxXkEyXkFqcGc@._V1_.jpg",
+        "altPoster": "https://www.hollywoodreporter.com/wp-content/uploads/2024/11/agency_102_lv_240717_00422_RT3-H-2024.jpg?w=1296&h=730&crop=1",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-11-29",
+        "eps": 10,
+        "country": "United States",
+        "genres": [
+            "Thriller"
+        ],
+        "type": "tvshow"
     },
     {
-      "id": 22,
-      "title": "Dark Matter",
-      "synopsis": "Professor Jason Dessen is abducted into an alternate version of his life. In a labyrinth of realities, he embarks on a harrowing journey to get back to his true family and save them from a terrifying foe imaginable -- himself.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BNzNmMDBhYmUtN2NmMC00NjNkLWJjMjAtOWJkY2E2YWMzZDJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "altPoster": "https://www.hollywoodreporter.com/wp-content/uploads/2024/05/Dark_Mater_Photo_010702-copy.jpg?w=1296&h=730&crop=1",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-05-08",
-      "eps": 10,
-      "country": "United States",
-      "genres": [
-        "Thriller"
-      ],
-      "type": "tvshow"
+        "id": 22,
+        "title": "Dark Matter",
+        "synopsis": "Professor Jason Dessen is abducted into an alternate version of his life. In a labyrinth of realities, he embarks on a harrowing journey to get back to his true family and save them from a terrifying foe imaginable -- himself.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BNzNmMDBhYmUtN2NmMC00NjNkLWJjMjAtOWJkY2E2YWMzZDJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "altPoster": "https://www.hollywoodreporter.com/wp-content/uploads/2024/05/Dark_Mater_Photo_010702-copy.jpg?w=1296&h=730&crop=1",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-05-08",
+        "eps": 10,
+        "country": "United States",
+        "genres": [
+            "Thriller"
+        ],
+        "type": "tvshow",
+        "featured": true
     },
     {
-      "id": 23,
-      "title": "Brilliant Minds",
-      "synopsis": "Dr. Oliver Wolf is an eccentric but incredibly gifted neurologist who suffers from a rare condition that gives him a unique perspective on care, fueling his mission to change the way the world sees his patients. After his unusual methods result in his dismissal, he takes his unconventional approach to a new hospital: Bronx General, where he leads a team of bright young interns in tackling some of the world's most puzzling psychological cases. With their help, he must also challenge his own personal and social limitations by navigating all the expectations, politics and complicated relationships that come with the job.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BZDI0M2RiNmMtYzMzYy00MzhkLThmMDktNzYyNGRjNDZjYzVlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "altPoster": "https://img.nbc.com/files/BRM_FullEp_010624.jpg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2024-09-23",
-      "eps": 13,
-      "country": "United States",
-      "genres": [
-        "Medical"
-      ],
-      "type": "tvshow"
+        "id": 23,
+        "title": "Brilliant Minds",
+        "synopsis": "Dr. Oliver Wolf is an eccentric but incredibly gifted neurologist who suffers from a rare condition that gives him a unique perspective on care, fueling his mission to change the way the world sees his patients. After his unusual methods result in his dismissal, he takes his unconventional approach to a new hospital: Bronx General, where he leads a team of bright young interns in tackling some of the world's most puzzling psychological cases. With their help, he must also challenge his own personal and social limitations by navigating all the expectations, politics and complicated relationships that come with the job.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BZDI0M2RiNmMtYzMzYy00MzhkLThmMDktNzYyNGRjNDZjYzVlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "altPoster": "https://img.nbc.com/files/BRM_FullEp_010624.jpg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2024-09-23",
+        "eps": 13,
+        "country": "United States",
+        "genres": [
+            "Medical"
+        ],
+        "type": "tvshow"
     },
     {
-      "id": 24,
-      "title": "On Call",
-      "synopsis": "A rookie and a veteran officer patrol duo in Long Beach, California, face the morality of protecting and serving a community.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BMTk3MjE5NDctOWJkMS00YzA0LTg0NTEtM2IzY2Q2MGZlODYwXkEyXkFqcGc@._V1_.jpg",
-      "altPoster": "https://www.hollywoodreporter.com/wp-content/uploads/2024/10/Troian-Bellisario-Traci-Harmon-Brandon-Larracuente-Alex-Diaz-in-On-Call-_-Photo-Credit_-Elizabeth-%E2%80%98Liz-Morris-.jpg",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2025-01-09",
-      "eps": 8,
-      "country": "United States",
-      "genres": [
-        "Crime"
-      ],
-      "type": "tvshow"
+        "id": 24,
+        "title": "On Call",
+        "synopsis": "A rookie and a veteran officer patrol duo in Long Beach, California, face the morality of protecting and serving a community.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BMTk3MjE5NDctOWJkMS00YzA0LTg0NTEtM2IzY2Q2MGZlODYwXkEyXkFqcGc@._V1_.jpg",
+        "altPoster": "https://www.hollywoodreporter.com/wp-content/uploads/2024/10/Troian-Bellisario-Traci-Harmon-Brandon-Larracuente-Alex-Diaz-in-On-Call-_-Photo-Credit_-Elizabeth-%E2%80%98Liz-Morris-.jpg",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2025-01-09",
+        "eps": 8,
+        "country": "United States",
+        "genres": [
+            "Crime"
+        ],
+        "type": "tvshow"
     },
     {
-      "id": 25,
-      "title": "Study Group",
-      "synopsis": "A struggling student at Korea's worst high school forms a study group while protecting his classmates with his fighting skills, hoping to overcome academic challenges and secure a spot in college.",
-      "mainPoster": "https://m.media-amazon.com/images/M/MV5BZDJmMDU0MTEtNmZkOS00ZGViLWExYTctYWY5YWQ0NTZlZTdhXkEyXkFqcGc@._V1_.jpg",
-      "altPoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVU_w8427MW2jbCD2UORTe4terLZDHMywLA&s",
-      "purchasePrice": 10,
-      "rentPrice": 5,
-      "releasedDate": "2025-01-23",
-      "eps": 10,
-      "country": "South Korea",
-      "genres": [
-        "Adventure",
-        "Action",
-        "Comedy"
-      ],
-      "type": "tvshow"
+        "id": 25,
+        "title": "Study Group",
+        "synopsis": "A struggling student at Korea's worst high school forms a study group while protecting his classmates with his fighting skills, hoping to overcome academic challenges and secure a spot in college.",
+        "mainPoster": "https://m.media-amazon.com/images/M/MV5BZDJmMDU0MTEtNmZkOS00ZGViLWExYTctYWY5YWQ0NTZlZTdhXkEyXkFqcGc@._V1_.jpg",
+        "altPoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVU_w8427MW2jbCD2UORTe4terLZDHMywLA&s",
+        "purchasePrice": 10,
+        "rentPrice": 5,
+        "releasedDate": "2025-01-23",
+        "eps": 10,
+        "country": "South Korea",
+        "genres": [
+            "Adventure",
+            "Action",
+            "Comedy"
+        ],
+        "type": "tvshow"
     }
-  ]
-}
+]

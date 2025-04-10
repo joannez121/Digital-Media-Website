@@ -1,21 +1,14 @@
-FROM eclipse-temurin:21-jdk-alpine
+FROM eclipse-temurin:21-jre-hotspot
+
 WORKDIR /app
-COPY pom.xml .
-COPY src src
 
-# Copy Maven wrapper
-COPY mvnw .
-COPY .mvn .mvn
+# Copy the Spring Boot application JAR file into the container
+# Assuming your JAR file is built into the 'target' directory and you will
+# copy it into the same directory as your Dockerfile before building the image.
+COPY media-0.0.1-SNAPSHOT.jar app.jar
 
-# Set execution permission for the Maven wrapper
-RUN chmod +x ./mvnw
-RUN ./mvnw clean package -DskipTests
-
-# Stage 2: Create the final Docker image using OpenJDK 19
-FROM eclipse-temurin:21-jdk-alpine
-VOLUME /tmp
-
-# Copy the JAR from the build stage
-COPY --from=build /app/target/*.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+# Expose the port your Spring Boot application runs on (default is 8080)
 EXPOSE 8080
+
+# Define the command to run the Spring Boot application
+ENTRYPOINT ["java", "-jar", "app.jar"]
